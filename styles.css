@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+  padding-right: 120px;
+  text-align: center;
+}
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem; /* Decreased font size */
+  font-weight: 300; /* Lighter font weight */
+  margin: 0;
+  line-height: 1; /* Ensures the name and profile pic are aligned */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 130px;
+}
+
+#profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: center;
+}
+
+.caption {
+  font-size: 0.9rem;
+}
+
+nav {
+  margin-top: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 130px;
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+section:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.education-item,
+.project {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#social-links {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#social-links a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#social-links a i {
+  margin-right: 0.5rem;
+}
+
+#social-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
