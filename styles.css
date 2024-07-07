@@ -33,6 +33,8 @@ header h1 {
   width: 140px;
   height: 140px;
   border-radius: 50%;
+  border: 3px solid #fff; /* Small border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow */
 }
 
 .profile-info {
@@ -80,7 +82,7 @@ section:hover {
 }
 
 .education-item,
-.project {
+.project,#social-links {
   border: 1px solid #ddd;
   padding: 1.5rem;
   margin-bottom: 1rem;
@@ -90,7 +92,6 @@ section:hover {
 
 #social-links {
   margin-top: 1rem;
-  text-align: center;
 }
 
 #social-links a {
