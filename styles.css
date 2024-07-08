@@ -82,7 +82,9 @@ section:hover {
 }
 
 .education-item,
-.project,#social-links {
+.project,
+#social-links,
+.skill {
   border: 1px solid #ddd;
   padding: 1.5rem;
   margin-bottom: 1rem;
