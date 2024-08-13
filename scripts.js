@@ -1,20 +1,25 @@
-// Smooth scroll for navigation links
-document.querySelectorAll("nav a").forEach((anchor) => {
-  anchor.addEventListener("click", function (event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    // Contact Form Submission
+    const contactForm = document.querySelector('.contact-form');
+    const feedbackMessage = document.createElement('p');
 
-    const targetId = this.getAttribute("href").substring(1);
-    const targetSection = document.getElementById(targetId);
-
-    window.scrollTo({
-      top: targetSection.offsetTop,
-      behavior: "smooth",
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        feedbackMessage.textContent = 'Thank you for your message!';
+        feedbackMessage.style.color = 'green';
+        contactForm.appendChild(feedbackMessage);
+        contactForm.reset();
     });
-  });
-});
 
-// Display the current year in the footer
-window.addEventListener("DOMContentLoaded", (event) => {
-  const currentYear = new Date().getFullYear();
-  document.getElementById("current-year").textContent = currentYear;
+    // Feedback Form Submission
+    const feedbackForm = document.querySelector('.feedback-form');
+    const feedbackFormMessage = document.createElement('p');
+
+    feedbackForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        feedbackFormMessage.textContent = 'Thank you for your feedback!';
+        feedbackFormMessage.style.color = 'green';
+        feedbackForm.appendChild(feedbackFormMessage);
+        feedbackForm.reset();
+    });
 });
