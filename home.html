@@ -3,111 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roni Rapaka</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio Website</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="header-content">
-        <img src="pic.jpg" alt="Profile Picture" id="profile-pic" />
-        <div class="profile-info">
-          <h1>Roni Rapaka</h1>
-          <p class="caption">Student</p>
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <header class="header">
+      <a href="#" class="logo">MyPortfolio</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="#feedback">Feedback</a>
       </nav>
     </header>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
+
+    <section id="home" class="home">
+      <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1>Roni Rapaka</h1>
         <p>
-          Hello!!! Myself Roni, I am a student passionate about web development.
-          I like creating interactive and responsive websites.
+          I'm a web developer. I specialize in creating interactive and
+          responsive web applications.
         </p>
-      </section>
-      <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>SRM University AP</h3>
-          <p>Bachelor of Science in Computer Science</p>
-          <p>2022 - Present</p>
-        </div>
-        <div class="education-item">
-          <h3>Narayana Junior College</h3>
-          <p>Intermediate Education</p>
-          <p>2020 - 2022</p>
-        </div>
-        <div class="education-item">
-          <h3>Narayana E-techno School</h3>
-          <p></p>
-          <p>2015 - 2020</p>
-        </div>
-      </section>
+        <a href="mailto:ronirapaka13@gmail.com" class="btn-box">Contact Me</a>
+      </div>
+      <div class="home-img">
+        <img src="ronipic.jpg" alt="Your Photo" />
+      </div>
+    </section>
 
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">
-          <h3><li>C, C++</li></h3>
-          <h3><li>HTML, CSS</li></h3>
-          <h3><li>JavaScript</li></h3>
-          <h3><li>Python</li></h3>
-        </div>
-      </section>
+    <section id="about" class="about">
+      <div class="about-img">
+        <img src="ronipic.jpg" alt="About Me" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>
+          I'm a passionate developer who loves coding and solving problems.
+        </h4>
+        <p>I like creating interactive and responsive websites.</p>
 
-      <section id="projects">
-        <h2>Projects</h2>
+        <!-- Skills Section -->
+       
+      </div>
+    </section>
+    <section id="skills" class="skills">
+      <div class="sub-title">
+        <div class="pro"> <span> S</span>kills</div>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="sub-title">
+        <div class="pro">My <span>Projects</span></div>
+      </div>
+      <div class="projects-list">
         <div class="project">
-          <h3>Movie Ticket Booking Management System</h3>
+          <h3>Project 1</h3>
+          <p>Movie Ticket Booking Management System</p>
           <p>
             A DataBase Management Project in which user can book tickets for
             his/her favourite show through our website
           </p>
         </div>
         <div class="project">
-          <h3>Contact Management System</h3>
+          <h3>Project 2</h3>
+          <p>Contact Management System</p>
           <p>
             A Complete C++ Based Backend project, where user can manage contact
             information
           </p>
         </div>
-        <div class="project">
-          <h3>Student Portfolio</h3>
-          <p>A Portfolio site based on HTML, CSS and JavaScript</p>
+        <!-- Add more projects as needed -->
+      </div>
+    </section>
+
+    <section id="education" class="education-section">
+      <div class="sub-title">
+        <div class="pro">My <span>Education</span></div>
+      </div>
+      <div class="education-list">
+        <div class="education-entry">
+          <div class="education-text">
+            <h2>SRMAP UNIVERSITY</h2>
+            <p>B.Tech in Computer Science and Engineering</p>
+            <p>Cum. CGPA 8.20 / 10.0</p>
+            <p>Grad. May 2026 | Amaravati, Andhra Pradesh</p>
+          </div>
+          <div class="education-image">
+            <img src="srmap.jpg" alt="SRMAP University" />
+          </div>
         </div>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <div id="social-links">
-          <a href="https://www.linkedin.com/in/roni06/" target="_blank"
-            ><i class="fab fa-linkedin"></i> LinkedIn</a
-          >
-          <a href="https://github.com/ronir0613" target="_blank"
-            ><i class="fab fa-github"></i> GitHub</a
-          >
+        <div class="education-entry">
+          <div class="education-text">
+            <h2>NARAYANA JUNIOR COLLEGE</h2>
+            <p>Intermediate in MPC (MATHS, PHYSICS, CHEMISTRY)</p>
+            <p>May 2022 | Bhimavaram, Andhra Pradesh</p>
+            <p>Percentage: 90.1</p>
+          </div>
+          <div class="education-image">
+            <img src="college.avif" alt="Narayana Junior College" />
+          </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p>
-        &copy; <span id="current-year"></span> Roni Rapaka. All rights reserved.
-      </p>
+        <div class="education-entry">
+          <div class="education-text">
+            <h2>NARAYANA E.M HIGH SCHOOL</h2>
+            <p>10<sup>th</sup> standard</p>
+            <p>May 2020 | Palakol, Andhra Pradesh</p>
+            <p>Percentage: 98.8</p>
+          </div>
+          <div class="education-image">
+            <img src="image.png" alt="Narayana E.M High School" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <p>
+          Feel free to reach out if you have any questions or would like to work
+          with me.
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/roni06/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/ronir0613" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-box">Send Message</button>
+      </form>
+    </section>
+
+    <section id="feedback" class="feedback">
+      <div class="feedback-text">
+        <h2>Feedback <span>Form</span></h2>
+        <h4>We Value Your Feedback <span>!</span></h4>
+        <h4>Your feedback helps us improve.</h4>
+        <p>Please rate your experience and leave your feedback.</p>
+      </div>
+      <form class="feedback-form">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <label for="message">Feedback:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Your feedback"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn-box">Submit Feedback</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div>&copy; 2024</div>
+      <div><b>Roni Rapaka</b></div>
+      <div>All rights reserved</div>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
