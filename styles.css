@@ -194,42 +194,6 @@ body {
   color: #ff7613;
 }
 
-.services-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
-  grid-gap: 40px;
-}
-
-.services-list div {
-  background-color: transparent;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 13px;
-  border-radius: 20px;
-  transition: background 0.5s, transform 0.5s;
-  box-shadow: 1px 1px 20px #ff7613;
-}
-
-.services-list div i {
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-
-.services-list div h2 {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-.services-list div p {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.services-list div:hover {
-  transform: translateY(-10px);
-}
-
 /* Projects Section */
 .projects {
   padding: 90px 10%;
@@ -420,9 +384,6 @@ body {
     align-items: center;
   }
 
-  .rating {
-    font-size: 1.5rem;
-  }
   .home {
     flex-direction: column-reverse;
   }
@@ -542,4 +503,11 @@ body {
     width: 150px; /* Larger image size for mobile */
     height: 150px; /* Maintain square shape */
   }
+}
+
+#time-display {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ff7613;
 }
